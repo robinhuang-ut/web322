@@ -4,6 +4,8 @@ var path = require("path");
 
 var HTTP_PORT = process.env.PORT || 8080;
 
+console.log('process.env.PORT', process.env.PORT);
+
 // call this function after the http server starts listening for requests
 function onHttpStart() {
   console.log("Express http server listening on: " + HTTP_PORT);
